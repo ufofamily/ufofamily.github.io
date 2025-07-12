@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang='ru'>
+
+<html lang="ru">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Лайнап фестиваля</title>
-
-
 <link href="manifest.json" rel="manifest"/>
 <link href="style.css" rel="stylesheet"/>
 <script>
@@ -14,7 +13,22 @@
   }
 </script>
 <script defer="" src="script.js"></script>
-</head>
+<style>
+.tab-buttons button {
+  width: 120px;
+  height: 48px;
+  font-size: 16px;
+  padding: 10px 0;
+  margin: 0 6px;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+</style></head>
 <body>
 <div class="tab-buttons">
 <button data-tab="psycore" type="button">Псикорная</button>
@@ -126,7 +140,6 @@
 </div>
 </div>
 </div>
-
 <script>
 function parseDateTime(text) {
     const match = text.match(/(\d{2})[.](\d{2})\s+(\d{2}):(\d{2})/);
