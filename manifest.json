@@ -1,0 +1,20 @@
+{
+  "name": "Лайнап КОМу ЗА 200",
+  "short_name": "КЗ200",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#dec88b",
+  "theme_color": "#1a381d",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
