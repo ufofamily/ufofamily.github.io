@@ -2,14 +2,14 @@
 <!DOCTYPE html>
 
 <html lang="ru">
-<head>
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#1a381d">
-<link rel="icon" href="icon-512.png">
+<head><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="manifest.json" rel="manifest"/>
+<meta content="#1a381d" name="theme-color"/>
+<link href="icon-512.png" rel="icon"/>
 <meta charset="utf-8"/>
 <title>Лайнап фестиваля</title>
 <style>
-        body {
+     body {
             background: linear-gradient(-45deg, #dec88b, #d8bd7e, #c8aa5f, #f0e0b8);
 background-size: 400% 400%;
 animation: gradientAnimation 20s ease infinite;
@@ -50,7 +50,7 @@ animation: gradientAnimation 20s ease infinite;
 background-size: 400% 400%;
 animation: gradientAnimation 20s ease infinite;
             border: 10px solid #1a381d;
-            padding: 30px;
+            padding: 0px;
             text-align: left;
             font-size: 20px;
             line-height: 1.6;
@@ -151,7 +151,89 @@ body > *:not(svg) {
 
 
 .highlight { background-color: #ffe680; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+.tab-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+.tab-buttons button {
+  flex: 1 1 120px;
+  max-width: 140px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.tab-content {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 2px solid black;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: rgba(255,255,255,0.6);
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+.tab-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #111;
+}
+
+.tab-buttons button {
+  flex: 1 1 25%;
+  max-width: 25%;
+  min-width: 120px;
+  height: 48px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.tab-content {
+  width: 100%;
+  padding: 16px;
+  border-top: 2px solid black;
+  box-sizing: border-box;
+  background-color: rgba(255,255,255,0.6);
+}
 </style>
+<link href="manifest.json" rel="manifest"/>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+  }
+</script>
 </head>
 <body>
 <div class="content">
